@@ -1,0 +1,16 @@
+[advisories]
+vulnerability = "deny"
+unmaintained = "deny"
+notice = "deny"
+unsound = "deny"
+ignore = ["RUSTSEC-2021-0127"] # dependency on abandoned serde_cbor, ignored at the moment but will be replaced later.
+
+[bans]
+multiple-versions = "warn"
+
+[licenses]
+unlicensed = "deny"
+copyleft = "deny"
+confidence-threshold = 0.93
+allow = ["BSD-2-Clause", "BSD-3-Clause","Apache-2.0","MIT"]
+clarify = []
